@@ -48,8 +48,7 @@ Depois de salvar ou alterar as variáveis, publique uma nova implantação para 
 
 - Sem análise integrada, os registros permanecem no navegador e não são transmitidos pelo site.
 - Com **Analisar aqui**, somente o prompt preparado é enviado ao servidor do Netlify e ao Google Gemini, após consentimento explícito.
-- A função não grava o conteúdo do diário em logs da aplicação. O Google recebe o prompt para gerar a resposta. Na faixa gratuita do Gemini, o conteúdo pode ser usado para melhorar produtos.
-- Na faixa gratuita do Gemini, o Google pode usar o conteúdo enviado para melhorar produtos. Evite enviar informações que não queira compartilhar.
+- A função não grava o conteúdo do diário em logs da aplicação. O Google recebe o prompt para gerar a resposta. Na faixa gratuita do Gemini, o Google pode usar o conteúdo enviado para melhorar produtos; evite enviar informações que não queira compartilhar.
 - Sem `ACCESS_CODE`, qualquer pessoa que acessar o site poderá chamar a função e consumir a cota da chave. O código compartilhado restringe o acesso, mas não substitui autenticação individual ou limite de uso.
 - A importação valida datas, escalas de 0 a 10, minutos de 0 a 1440 e o tamanho do arquivo.
 - Para ocultar o site de buscadores, adicione `<meta name="robots" content="noindex">` ao `<head>`.
