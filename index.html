@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; manifest-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#111522">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Diário de prática para solitude escolhida, equanimidade e autonomia existencial. Os dados ficam só no seu navegador.">
+  <title>Entre margens — diário de prática</title>
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <noscript><div class="notice warning"><div>Este diário precisa de JavaScript para funcionar. Seus registros ficam apenas neste navegador.</div></div></noscript>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-today" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M8 3.5v3M16 3.5v3M3.5 9.5h17M8 15l2.4 2.4 5.6-5.6"/></symbol>
+    <symbol id="icon-journey" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M9 15l2.2-4.2L15.5 9l-2.2 4.2L9 15zM12 3.5v2M20.5 12h-2M12 20.5v-2M3.5 12h2"/></symbol>
+    <symbol id="icon-practice" viewBox="0 0 24 24"><path d="M12 2.8l1.7 6.1 6.1 1.7-6.1 1.7-1.7 6.1-1.7-6.1-6.1-1.7 6.1-1.7L12 2.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16z"/></symbol>
+    <symbol id="icon-review" viewBox="0 0 24 24"><path d="M4 18.5h16M6.5 15V9.5M12 15V5.5M17.5 15v-3.5"/><circle cx="6.5" cy="7" r="1.5"/><circle cx="17.5" cy="9" r="1.5"/></symbol>
+    <symbol id="icon-ideas" viewBox="0 0 24 24"><path d="M4 5.5c3.2-1.5 5.9-1 8 1.2v13c-2.1-2.2-4.8-2.7-8-1.2v-13zM20 5.5c-3.2-1.5-5.9-1-8 1.2v13c2.1-2.2 4.8-2.7 8-1.2v-13zM7 9h2M7 12h2M15 9h2M15 12h2"/></symbol>
+    <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/><path d="M17.7 6.3L21 3M18 3h3v3"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3.5v11M7.5 10l4.5 4.5 4.5-4.5M4 16.5v3h16v-3"/></symbol>
+    <symbol id="icon-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="icon-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="icon-screen" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="12" rx="2.5"/><path d="M8 20h8M12 16.5V20M8 8h8"/></symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24"><path d="M12 3l2 6.5 6.5 2-6.5 2L12 20l-2-6.5-6.5-2 6.5-2L12 3z"/></symbol>
+  </svg>
+  <div class="shell">
+    <aside class="rail" aria-label="Navegação principal">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M18.5 14.7A7.6 7.6 0 0 1 9.3 5.5a7.7 7.7 0 1 0 9.2 9.2z"/><path d="M16.5 3.5v3M15 5h3M19.5 8.5v2M18.5 9.5h2"/></svg></div>
+        <div><div class="brand-name">Entre margens</div><div class="brand-sub">diário de prática</div></div>
+      </div>
+      <div>
+        <div class="nav-label">Seu espaço</div>
+        <nav class="desktop-nav" aria-label="Seções">
+          <button class="nav-button" data-view="home" aria-current="page"><span class="nav-icon"><svg aria-hidden="true"><use href="#icon-today"/></svg></span>Hoje</button>
+          <button class="nav-button" data-view="journey"><span class="nav-icon"><svg aria-hidden="true"><use href="#icon-journey"/></svg></span>Jornada 28 dias</button>
+          <button class="nav-button" data-view="practices"><span class="nav-icon"><svg aria-hidden="true"><use href="#icon-practice"/></svg></span>Práticas</button>
+          <button class="nav-button" data-view="reviews"><span class="nav-icon"><svg aria-hidden="true"><use href="#icon-review"/></svg></span>Revisões</button>
+          <button class="nav-button" data-view="ideas"><span class="nav-icon"><svg aria-hidden="true"><use href="#icon-ideas"/></svg></span>Ideias e leituras</button>
+        </nav>
+      </div>
+      <div class="rail-note"><strong>Uma lembrança</strong>O objetivo é poder escolher solitude ou companhia com liberdade. A quantidade de conversas não mede o valor do seu dia.</div>
+      <div class="rail-support">Precisa de apoio agora?<br><a href="tel:188">CVV 188</a> (24 h) · <a href="tel:192">SAMU 192</a></div>
+      <div class="rail-foot">Projeto pessoal<br>Solitude · equanimidade · autonomia existencial</div>
+    </aside>
+
+    <main class="main" id="main">
+      <header class="topbar">
+        <div><div class="eyebrow">Caderno de observação</div><div class="small muted" id="topDate"></div></div>
+        <div class="top-actions">
+          <button class="quiet-button" id="exportButton" type="button">Baixar meus dados</button>
+          <button class="quiet-button" id="importButton" type="button">Importar cópia</button>
+          <button class="icon-button" id="printButton" type="button" aria-label="Imprimir ou salvar em PDF" title="Imprimir / salvar em PDF"><svg aria-hidden="true"><use href="#icon-download"/></svg></button>
+        </div>
+      </header>
+
+      <div class="content">
+        <section class="view" id="view-home">
+          <div class="hero">
+            <div class="hero-copy">
+              <div class="eyebrow">Solitude escolhida · vida interior · ação consciente</div>
+              <h1>Sua própria companhia, <span>por escolha.</span></h1>
+              <p class="lead">Um lugar para praticar autonomia afetiva e equanimidade sem transformar sentimentos em falha — e sem fazer da solitude uma obrigação.</p>
+              <div class="pills"><span class="pill">prática inicial de 28 dias</span><span class="pill">revisões flexíveis</span><span class="pill">funciona offline</span></div>
+            </div>
+            <div class="hero-side">
+              <figure class="hero-art">
+                <svg viewBox="0 0 420 160" role="img" aria-labelledby="heroArtTitle">
+                  <title id="heroArtTitle">Uma janela aberta para a noite, com lua, estrelas e uma planta</title>
+                  <defs><linearGradient id="skyArt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#31314b"/><stop offset="1" stop-color="#171d2d"/></linearGradient><linearGradient id="windowArt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8f7aa9" stop-opacity=".78"/><stop offset="1" stop-color="#34324b" stop-opacity=".35"/></linearGradient></defs>
+                  <rect width="420" height="160" rx="14" fill="url(#skyArt)"/><circle cx="330" cy="38" r="20" fill="#e7c99c"/><circle cx="339" cy="30" r="19" fill="#25283e"/>
+                  <g fill="#d8c8ec"><circle cx="278" cy="31" r="1.7"/><circle cx="380" cy="62" r="1.4"/><circle cx="304" cy="78" r="1.2"/><circle cx="247" cy="53" r="1.1"/></g>
+                  <path d="M0 130c55-22 89-19 140 1 54 21 91-7 145-8 48-1 82 22 135 7v30H0z" fill="#20293a"/>
+                  <path d="M59 145V61a14 14 0 0 1 14-14h107a14 14 0 0 1 14 14v84" fill="url(#windowArt)" stroke="#bba4d6" stroke-opacity=".65" stroke-width="2"/><path d="M125 48v97M61 96h131" stroke="#cbb8df" stroke-opacity=".42" stroke-width="2"/>
+                  <path d="M219 145h33l-4 12h-25z" fill="#9e7f74"/><path d="M235 145c-2-20-12-29-21-36m21 36c1-21 12-32 23-40m-24 26c-10-10-19-12-28-11m28 2c9-11 18-14 27-13" fill="none" stroke="#a6c5b0" stroke-width="3" stroke-linecap="round"/><ellipse cx="210" cy="109" rx="6" ry="3" transform="rotate(32 210 109)" fill="#a6c5b0"/><ellipse cx="258" cy="105" rx="6" ry="3" transform="rotate(-32 258 105)" fill="#a6c5b0"/>
+                  <path d="M28 28h22M39 17v22" stroke="#c3a7e8" stroke-opacity=".6" stroke-linecap="round"/>
+                </svg>
+              </figure>
+              <div class="day-stat"><strong id="journeyStatus">Preparação</strong><span id="journeyDateLabel">seu ritmo, suas escolhas</span></div>
+              <div class="progress-track" id="progressBar" role="progressbar" aria-label="Progresso do ciclo inicial" aria-valuemin="0" aria-valuemax="28" aria-valuenow="0" aria-valuetext="ciclo ainda não iniciado"><div class="progress-fill" id="progressFill"></div></div>
+              <div class="stat-caption"><span id="progressCaption">28 dias de aprendizagem</span><span id="entryCount">0 registros</span></div>
+              <p class="note" id="startNote">O ciclo começa quando fizer sentido. Não há sequência perfeita a manter; pausas e ajustes fazem parte.</p>
+              <button class="primary-button btn-block" id="startJourney" type="button">Começar o ciclo hoje</button>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <article class="card practice-card">
+              <div class="card-kicker"><span>Prática de hoje</span><span id="todayDayLabel">Dia 1 · preparação</span></div>
+              <span class="practice-label" id="todayFocus">Reconhecer o padrão</span>
+              <h2 id="todayTitle">Faça um primeiro retrato do dia</h2>
+              <p class="description" id="todayDescription">Observe como você está, sem tentar corrigir nada ainda.</p>
+              <p class="micro" id="todayMicro">O foco é perceber o que você escolhe, não cumprir uma cota de solitude.</p>
+              <button class="panel-link" type="button" data-scroll-entry>Registrar no diário <span aria-hidden="true">→</span></button>
+            </article>
+            <article class="card quote-card">
+              <div><span class="quote-mark" aria-hidden="true">“</span><blockquote>Não preciso gostar do que aconteceu. Posso escolher o próximo passo.</blockquote></div>
+              <cite>Uma síntese prática do projeto</cite>
+            </article>
+          </div>
+
+          <div class="section-label">Uma bússola para o momento</div>
+          <div class="step-row" aria-label="Fluxo de autorregulação">
+            <div class="step"><b>01 · OBSERVAR</b><span>O que aconteceu? O que surgiu em mim?</span></div>
+            <div class="step"><b>02 · NOMEAR</b><span>Desejo, hábito, emoção, crítica ou decisão?</span></div>
+            <div class="step"><b>03 · SEPARAR</b><span>O que posso influenciar agora?</span></div>
+            <div class="step"><b>04 · ESCOLHER</b><span>Contato, solitude, limite, pausa ou ação.</span></div>
+            <div class="step"><b>05 · AGIR</b><span>Um próximo passo proporcional e possível.</span></div>
+            <div class="step"><b>06 · REVER</b><span>Isso preservou liberdade e vida cotidiana?</span></div>
+          </div>
+
+          <div class="entry-wrap" id="entrySection">
+            <div class="entry-header">
+              <div><div class="eyebrow">Ficha diária · cerca de 3 a 5 minutos</div><h2>Registrar o dia</h2></div>
+              <div class="date-controls">
+              <button class="icon-button" id="prevDate" type="button" aria-label="Dia anterior"><svg aria-hidden="true"><use href="#icon-left"/></svg></button>
+                <input type="date" id="entryDate" aria-label="Data do registro">
+              <button class="icon-button" id="nextDate" type="button" aria-label="Dia seguinte"><svg aria-hidden="true"><use href="#icon-right"/></svg></button>
+              <button class="quiet-button" id="todayDate" type="button">Hoje</button>
+              </div>
+            </div>
+            <div class="notice mb-14"><span class="notice-icon" aria-hidden="true"><svg class="inline-icon"><use href="#icon-spark"/></svg></span><div><strong>Registre para entender, não para se avaliar.</strong> As escalas são informais e opcionais. Um dia difícil não invalida o processo; compare experiências parecidas e preserve espaço para contexto.</div></div>
+            <form id="dailyForm" class="card" autocomplete="off">
+              <div class="day-intention">
+                <div class="intention-copy"><div class="card-kicker"><span>Meta do dia</span><span id="todayDayLabelForm"></span></div><p id="goalSuggestion">Uma meta pequena, ligada ao tema de hoje, pode aparecer aqui.</p></div>
+                <button class="quiet-button" id="useSuggestion" type="button">Usar meta sugerida</button>
+                <div class="field"><label for="dayIntention">Minha meta para hoje</label><textarea id="dayIntention" rows="2" placeholder="Edite a sugestão ou escreva uma meta sua para este dia."></textarea><span class="hint">Fica salva com esta data. Ajuste, simplifique ou deixe em branco; é um próximo passo possível, não uma cobrança.</span></div>
+              </div>
+              <div class="field diary-field"><label for="dayJournal">Meu diário de hoje</label><textarea id="dayJournal" placeholder="O que aconteceu? O que ficou comigo? O que quero lembrar — sem precisar organizar tudo agora?" rows="6"></textarea><span class="hint">Escreva livremente. Você pode salvar só algumas linhas ou deixar este espaço em branco.</span></div>
+              <div class="scale-heading"><div><h3>Como foi por dentro?</h3><p class="small muted">Escolha um número de 0 a 10 em cada escala. Todas são opcionais.</p></div><span class="scale-badge">0–10</span></div>
+              <div class="score-grid">
+                <div class="score"><div class="score-top"><span class="score-name">Autonomia da escolha</span><output id="autonomyOut">—</output></div><div class="number-scale" data-metric="autonomy" aria-label="Autonomia da escolha"></div><div class="range-hints"><span>Não escolhi livremente</span><span>Escolha muito livre</span></div></div>
+                <div class="score"><div class="score-top"><span class="score-name">Conforto na solitude</span><output id="comfortOut">—</output></div><div class="number-scale" data-metric="comfort" aria-label="Conforto na solitude"></div><div class="range-hints"><span>Desconfortável</span><span>Confortável</span></div></div>
+                <div class="score"><div class="score-top"><span class="score-name">Vontade urgente de contato</span><output id="contactUrgencyOut">—</output></div><div class="number-scale" data-metric="contactUrgency" aria-label="Vontade urgente de contato"></div><div class="range-hints"><span>Nenhuma</span><span>Muito intensa</span></div></div>
+                <div class="score"><div class="score-top"><span class="score-name">Frustração por não socializar</span><output id="socialFrustrationOut">—</output></div><div class="number-scale" data-metric="socialFrustration" aria-label="Frustração por não socializar"></div><div class="range-hints"><span>Nenhuma</span><span>Muito intensa</span></div></div>
+                <div class="score"><div class="score-top"><span class="score-name">Reatividade emocional</span><output id="reactivityOut">—</output></div><div class="number-scale" data-metric="reactivity" aria-label="Reatividade emocional"></div><div class="range-hints"><span>Baixa</span><span>Muito intensa</span></div></div>
+                <div class="score"><div class="score-top"><span class="score-name">Prazer geral no dia</span><output id="pleasureOut">—</output></div><div class="number-scale" data-metric="pleasure" aria-label="Prazer geral no dia"></div><div class="range-hints"><span>Pouco prazer</span><span>Muito prazer</span></div></div>
+              </div>
+              <div class="screen-entry">
+                <div class="screen-entry-head"><div><div class="card-kicker">Uso consciente, sem meta de zero</div><h3>Tempo de tela e redes</h3><p>Registre os minutos do seu aparelho. Redes sociais contam dentro do total de tela.</p></div><span class="screen-symbol" aria-hidden="true"><svg class="inline-icon"><use href="#icon-screen"/></svg></span></div>
+                <div class="screen-inputs">
+                  <div class="field"><label for="screenTotalMinutes">Tempo total de tela · minutos</label><input id="screenTotalMinutes" type="number" min="0" max="1440" step="5" placeholder="Ex.: 360"></div>
+                  <div class="field"><label for="socialMinutes">Redes sociais · minutos</label><input id="socialMinutes" type="number" min="0" max="1440" step="5" placeholder="Ex.: 85"></div>
+                </div>
+                <span class="hint">Preencha a partir de Tempo de Uso / Bem-estar Digital ou faça uma estimativa. O site não lê automaticamente o celular ou computador.</span>
+                <p class="field-warning" id="screenWarning" aria-live="polite"></p>
+              </div>
+              <details class="extras"><summary>Adicionar contexto ou uma pergunta de reflexão</summary>
+                <div class="entry-top">
+                  <div class="field"><label for="activity">Atividade individual escolhida</label><input id="activity" type="text" placeholder="Leitura, caminhada, música…"></div>
+                  <div class="field"><label for="minutes">Tempo aproximado (opcional)</label><input id="minutes" type="number" min="0" max="1440" step="5" placeholder="minutos"></div>
+                  <div class="field"><label for="motivation">O que melhor descreve o motivo?</label><select id="motivation"><option value="">Escolha se quiser</option><option>Interesse ou curiosidade</option><option>Descanso ou espaço pessoal</option><option>Vontade genuína de ficar só</option><option>Tédio ou hábito</option><option>Busca de validação ou resposta</option><option>Receio de rejeição ou intimidade</option><option>Companhia era desejada, mas indisponível</option><option>Outro motivo</option></select></div>
+                  <div class="field"><label for="solitudeMode">Como foi estar só?</label><select id="solitudeMode"><option value="">Não se aplica / prefiro não marcar</option><option>Escolhido — combinava com o que eu queria</option><option>Imposto — eu queria contato, mas não aconteceu</option><option>Defensivo — o medo influenciou meu afastamento</option></select></div>
+                  <div class="field"><label for="dayLoad">Como foi o peso do dia?</label><select id="dayLoad"><option value="">Não registrar</option><option>Dia leve</option><option>Dia intenso</option><option>Cansaço ou sono baixo</option><option>Houve conflito pontual</option></select></div>
+                  <div class="field"><label for="protocolUsed">Prática que usei (se alguma)</label><select id="protocolUsed"><option value="">Nenhuma / não sei</option><option>A · Solitude com intenção</option><option>B · Pausa antes de contatar</option><option>C · Dia completo sem contato novo</option><option>D · Fato, influência, ação</option><option>E · Aprender uma vez</option><option>F · Aceitação e equanimidade</option><option>G · Preocupação agendada</option><option>H · Resposta deliberada à irritação</option><option>I · Fazer sem auditoria</option></select></div>
+                  <div class="field"><label for="functioning">Compromissos do dia</label><select id="functioning"><option value="">Não registrar</option><option>Preservados</option><option>Parciais</option><option>Prejudicados</option></select></div>
+                  <div class="field"><label for="freeNote">Uma nota para o contexto</label><input id="freeNote" type="text" placeholder="Sono, sobrecarga, conflito…"></div>
+                </div>
+                <div class="journal-grid">
+                  <div class="field"><label for="automatic">O que tive vontade de fazer no automático?</label><textarea id="automatic" placeholder="Ex.: checar mensagens, responder no impulso…"></textarea></div>
+                  <div class="field"><label for="deliberate">Qual foi minha escolha deliberada?</label><textarea id="deliberate" placeholder="Procurar alguém, ficar só, estabelecer um limite…"></textarea></div>
+                  <div class="field"><label for="disturbance">Algo me perturbou? Quanto tempo ocupou minha atenção?</label><textarea id="disturbance" placeholder="Fato, emoção e o que ajudou a retomar o presente."></textarea></div>
+                  <div class="field"><label for="dayValue">O que teve valor, independentemente de atenção alheia?</label><textarea id="dayValue" placeholder="Um interesse, descanso, tarefa, descoberta…"></textarea></div>
+                </div>
+              </details>
+              <div class="entry-foot"><span class="save-state" id="saveState" aria-live="polite">Este registro ainda não foi salvo.</span><div><button class="quiet-button" id="clearDate" type="button">Limpar este dia</button> <button class="primary-button" type="submit">Salvar registro</button></div></div>
+            </form>
+            <article class="card ai-card">
+              <div><div class="card-kicker">Reflexão assistida · você decide o que compartilhar</div><h3>Leve o registro para uma IA</h3><p class="small muted">Preparo uma pergunta cuidadosa com a meta e o diário de hoje. Você copia, abre a IA que preferir (Claude, ChatGPT, Gemini…) e cola quando quiser; nada sai automaticamente do navegador.</p></div>
+              <button class="secondary-button" id="prepareAI" type="button"><svg class="inline-icon" aria-hidden="true"><use href="#icon-spark"/></svg> Preparar análise com IA</button>
+            </article>
+          </div>
+          <article class="card screen-monitor" aria-labelledby="screenMonitorTitle">
+            <div class="screen-monitor-head"><div><div class="eyebrow">Seu ritmo, sem julgamento</div><h3 id="screenMonitorTitle">Panorama de 7 dias até a data selecionada</h3><p class="small muted">As médias usam apenas os dias em que há valores anotados.</p></div><span class="screen-symbol" aria-hidden="true"><svg class="inline-icon"><use href="#icon-screen"/></svg></span></div>
+            <div class="screen-average"><div><span>Tela total</span><strong id="screenAverageTotal">—</strong></div><div><span>Redes sociais</span><strong id="screenAverageSocial">—</strong></div><div><span>Dias registrados</span><strong id="screenCount">0</strong></div></div>
+            <div class="screen-chart" id="screenChart" aria-live="polite"></div>
+            <p class="small muted screen-footnote">O registro serve para perceber padrões e escolhas. Não é meta clínica nem comparação com outras pessoas.</p>
+          </article>
+          <div class="subtle-rule"></div>
+          <div class="notice warning"><span class="notice-icon" aria-hidden="true"><svg class="inline-icon"><use href="#icon-target"/></svg></span><div><strong>O sinal de benefício é mais liberdade, não frieza.</strong> Você continua capaz de escolher companhia, sentir afeto, ter prazer e cuidar das responsabilidades. Se a prática aumentar sofrimento, afastamento indesejado ou perda de interesse, reduza a intensidade ou interrompa.</div></div>
+          <div class="notice alert mt-14"><span class="notice-icon" aria-hidden="true"><svg class="inline-icon"><use href="#icon-heart"/></svg></span><div><p class="support-line"><strong>Se estiver difícil demais hoje, falar com alguém ajuda.</strong> No Brasil, o <a href="tel:188">CVV (188)</a> atende 24 horas, gratuitamente, por telefone e chat (<a href="https://cvv.org.br" target="_blank" rel="noopener noreferrer">cvv.org.br</a>); em emergência, ligue <a href="tel:192">SAMU 192</a>. Este diário não substitui apoio profissional.</p></div></div>
+        </section>
+
+        <section class="view" id="view-journey" hidden>
+          <div class="section-head"><div><div class="eyebrow">Implantação inicial</div><h2>Uma jornada de 28 dias</h2><p>Um roteiro de experimentação pessoal. Faça adaptações, pule um exercício que não caiba no dia e retome quando quiser. As durações são exemplos, nunca uma obrigação.</p></div><button class="secondary-button" type="button" data-go-home>Voltar ao diário</button></div>
+          <div class="notice"><span class="notice-icon" aria-hidden="true"><svg class="inline-icon"><use href="#icon-journey"/></svg></span><div>Comece por 10–15 minutos de solitude se isso for confortável. Avance apenas se fizer sentido. Se você já aprecia períodos sozinho, concentre-se na qualidade da escolha e na vida que quer construir.</div></div>
+          <article class="card start-card mt-14" aria-labelledby="startCardTitle">
+            <div><h3 id="startCardTitle">Data de início do ciclo</h3><p class="small muted" id="startCardText"></p></div>
+            <div class="start-actions">
+              <div class="field"><label for="startDateInput">Dia 1</label><input type="date" id="startDateInput"></div>
+              <button class="secondary-button" id="saveStartDate" type="button">Começar nesta data</button>
+              <button class="quiet-button" id="resetStart" type="button" hidden>Reiniciar ciclo</button>
+            </div>
+          </article>
+          <div id="journeyList"></div>
+          <div class="notice warning mt-24"><span class="notice-icon" aria-hidden="true"><svg class="inline-icon"><use href="#icon-spark"/></svg></span><div>O dia 28 é um ponto de ajuste, não uma conclusão. A continuidade passa a depender do que favorece liberdade, serenidade ou participação nos seus próprios projetos.</div></div>
+        </section>
+
+        <section class="view" id="view-practices" hidden>
+          <div class="section-head"><div><div class="eyebrow">Cartas de prática · A–I</div><h2>Pequenos gestos, sem placar</h2><p>Puxe uma ideia para este momento; fique com ela, adapte ou descarte. Aqui não há sequência para completar.</p></div></div>
+          <article class="practice-deck">
+            <div><div class="eyebrow">Baralho de pequenas pausas</div><h3>Que gesto combina com agora?</h3><p>Uma sugestão aleatória pode ajudar a sair da página em branco. Você continua no comando.</p></div>
+            <button class="primary-button" id="drawPractice" type="button">Puxar uma carta <svg class="inline-icon" aria-hidden="true"><use href="#icon-spark"/></svg></button>
+            <div class="practice-deck-art" aria-hidden="true"><svg viewBox="0 0 110 100"><defs><linearGradient id="cardFace" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b9a0d8"/><stop offset="1" stop-color="#62737f"/></linearGradient></defs><rect x="17" y="18" width="52" height="70" rx="10" transform="rotate(-12 17 18)" fill="#293044" stroke="#a6c5b0" stroke-opacity=".7" stroke-width="1.5"/><rect x="39" y="12" width="54" height="72" rx="10" transform="rotate(8 39 12)" fill="url(#cardFace)" stroke="#e8ddf3" stroke-opacity=".7" stroke-width="1.5"/><path d="M65 32l3.3 10.2L79 45.5l-10.7 3.3L65 59.5l-3.3-10.7L51 45.5l10.7-3.3L65 32z" fill="#fff0c8"/><path d="M48 67h27M50 73h20" stroke="#f4eee9" stroke-opacity=".75" stroke-width="2" stroke-linecap="round"/><circle cx="91" cy="20" r="2.5" fill="#e7c99c"/><path d="M14 9v12M8 15h12" stroke="#c3a7e8" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+            <div class="drawn-card" id="drawnCard" aria-live="polite"></div>
+          </article>
+          <div class="protocol-grid" id="protocolGrid"></div>
+          <div class="section-head review-head"><div><div class="eyebrow">Quando acontecer X…</div><h2>…experimente Y</h2><p>Um guia para situações cotidianas, com espaço para respostas proporcionais.</p></div></div>
+          <article class="card">
+            <div class="scenario"><strong>O dia passou sem conhecer alguém</strong><span>O dia não foi um fracasso social. Siga o plano individual; procure contato se houver vontade real.</span></div>
+            <div class="scenario"><strong>Uma pessoa demora a responder</strong><span>O atraso não prova rejeição. Evite checagens repetidas e retome outra atividade.</span></div>
+            <div class="scenario"><strong>Perdi uma oportunidade</strong><span>Separe fato, aprendizado específico e próximo passo. Pare de reconstruir a mesma decisão quando não surge informação nova.</span></div>
+            <div class="scenario"><strong>Recebi crítica ou comentário ofensivo</strong><span>Separe informação verificável de julgamento. Avalie limite, conversa ou reparação; não ensaie a cena por horas.</span></div>
+            <div class="scenario"><strong>Senti saudade ou vontade de proximidade</strong><span>O desejo não cancela sua autonomia. Decida livremente se quer contato, sem punir o sentimento.</span></div>
+            <div class="scenario"><strong>Uma obrigação mudou meu plano</strong><span>Reordene prioridades, negocie ou busque ajuda se necessário. A aceitação não exige passividade diante de uma exigência injusta.</span></div>
+            <div class="scenario"><strong>Pensei sobre absurdo, morte ou falta de sentido</strong><span>Uma reflexão filosófica é diferente de sofrimento persistente ou de desejar morrer. Se virar desejo pessoal de morrer, procure apoio humano imediato.</span></div>
+          </article>
+          <div class="section-head review-head"><div><div class="eyebrow">Se a prática não ajudar</div><h2>Manter, adaptar ou interromper</h2><p>Observe o conjunto e o contexto; estas são regras pessoais de prudência, não critérios diagnósticos.</p></div></div>
+          <div class="table-scroll"><table><caption class="sr-only">Sinais para manter, adaptar ou interromper a prática</caption><thead><tr><th>O que observo</th><th>Uma possibilidade</th><th>Próxima decisão</th></tr></thead><tbody>
+            <tr><td>Mais conforto e menos cobrança, com prazer preservado</td><td>A prática pode estar alinhada ao objetivo.</td><td>Manter ou simplificar.</td></tr>
+            <tr><td>Mais tempo só, porém mais angústia ou obrigação</td><td>Quantidade sem autonomia.</td><td>Diminuir metas de tempo e revisar a motivação.</td></tr>
+            <tr><td>Menos contatos e medo crescente de pessoas</td><td>Evitação pode estar substituindo escolha.</td><td>Suspender metas de afastamento e rever a estratégia.</td></tr>
+            <tr><td>Aparência mais fria, mas raiva interna prolongada</td><td>Supressão, não equanimidade.</td><td>Retomar aceitação e reavaliação; não exigir imobilidade.</td></tr>
+            <tr><td>Perda persistente de prazer ou interesse em quase tudo</td><td>Isso não significa autonomia.</td><td>Interromper a intensificação e procurar avaliação profissional.</td></tr>
+            <tr><td>Reflexões sobre morte viram desejo pessoal de morrer</td><td>Sinal urgente, fora do escopo deste diário.</td><td>Procurar apoio humano e assistência imediata: <a href="tel:188">CVV 188</a> ou <a href="tel:192">SAMU 192</a>.</td></tr>
+          </tbody></table></div>
+        </section>
+
+        <section class="view" id="view-reviews" hidden>
+          <div class="section-head"><div><div class="eyebrow">Revisar sem fazer placar</div><h2>Revisões semanais e mensais</h2><p>Use estas perguntas para perceber tendências. Compare contextos parecidos; não transforme notas ou respostas em prova de valor pessoal.</p></div></div>
+          <div class="notice warning mb-17"><span class="notice-icon" aria-hidden="true">⌁</span><div>As notas são escalas informais, não medidas clínicas. Procure mudanças na autonomia, recuperação, prazer e funcionamento juntos — nunca uma queda isolada como meta.</div></div>
+          <div id="weeklyReviews"></div>
+          <div class="section-head review-head"><div><div class="eyebrow">Só para observar</div><h2>Panorama das escalas</h2><p>Médias dos últimos sete dias e dos sete dias anteriores. Ponto de partida para conversar consigo mesmo — nunca um placar.</p></div></div>
+          <div id="scaleOverview"></div>
+          <div class="section-head review-head"><div><div class="eyebrow">Fim de mês ou quando for útil</div><h2>Revisão de manutenção</h2><p>Ajuste o ritmo ao que está acontecendo na sua vida agora.</p></div></div>
+          <div class="card">
+            <div class="field"><label for="monthly-0">Em quais momentos gostei genuinamente da minha própria companhia?</label><textarea id="monthly-0" data-review="monthly" data-q="0"></textarea></div>
+            <div class="field mt-13"><label for="monthly-1">Quando busquei pessoas por vontade e quando por obrigação subjetiva?</label><textarea id="monthly-1" data-review="monthly" data-q="1"></textarea></div>
+            <div class="field mt-13"><label for="monthly-2">Que crítica, irritação ou expectativa conseguiu me dominar por menos tempo?</label><textarea id="monthly-2" data-review="monthly" data-q="2"></textarea></div>
+            <div class="field mt-13"><label for="monthly-3">Houve perda de prazer, afastamento não desejado ou prejuízo funcional?</label><textarea id="monthly-3" data-review="monthly" data-q="3"></textarea></div>
+            <div class="field mt-13"><label for="monthly-4">O que quero manter, flexibilizar ou deixar de medir?</label><textarea id="monthly-4" data-review="monthly" data-q="4"></textarea></div>
+            <div class="entry-foot"><span class="save-state" id="reviewSaveState" aria-live="polite">As revisões são salvas neste navegador.</span><button class="danger-button quiet-button" id="clearAll" type="button">Apagar todos os dados locais</button></div>
+          </div>
+          <article class="card mt-14">
+            <div class="card-kicker">Seus registros</div>
+            <p class="small muted">Os dados ficam neste navegador e neste dispositivo. Baixe uma cópia para guardar ou transferir; uma cópia pode ser importada depois. A planilha (CSV) leva só números e opções marcadas, sem os textos do diário.</p>
+            <div class="btn-row"><button class="secondary-button" id="exportButtonReview" type="button">Baixar cópia JSON</button><button class="secondary-button" id="importButtonReview" type="button">Importar cópia JSON</button><button class="secondary-button" id="exportCsv" type="button">Baixar planilha (CSV)</button></div>
+          </article>
+          <div class="section-head review-head"><div><div class="eyebrow">Ritmo depois das quatro semanas</div><h2>Manutenção flexível</h2></div></div>
+          <div class="table-scroll"><table><caption class="sr-only">Ritmo de manutenção depois das quatro semanas</caption><thead><tr><th>Ritmo sugerido</th><th>Prática possível</th><th>Intenção</th></tr></thead><tbody>
+            <tr><td>Diariamente, se couber</td><td>Um momento intencional e uma resposta deliberada a frustrações.</td><td>Autonomia habitual, sem regra punitiva.</td></tr>
+            <tr><td>2–3 vezes por semana</td><td>Atividade individual satisfatória, sem obrigação de compartilhar.</td><td>Notar valor intrínseco.</td></tr>
+            <tr><td>Semanalmente · 10 min</td><td>Rever gatilhos, escolhas, prazer, cansaço, relações e projetos.</td><td>Reconhecer tendências sem hipercontrole.</td></tr>
+            <tr><td>Mensalmente</td><td>Comparar relatos, ajustar duração e frequência.</td><td>Perceber custos e mudanças.</td></tr>
+            <tr><td>Trimestralmente</td><td>Reexaminar valores, atividades, oportunidades e limites relacionais.</td><td>Preservar liberdade diante das mudanças da vida.</td></tr>
+          </tbody></table></div>
+          <div class="grid two mt-15">
+            <article class="card"><div class="card-kicker">Dia exigente</div><p class="no-margin">Três minutos de atenção à emoção e uma escolha deliberada. Sem meta de duração.</p></article>
+            <article class="card"><div class="card-kicker">Dia disponível</div><p class="no-margin">Um interesse individual por 30–60 minutos e escrita reflexiva, se isso for prazeroso.</p></article>
+          </div>
+        </section>
+
+        <section class="view" id="view-ideas" hidden>
+          <div class="section-head"><div><div class="eyebrow">Fundamentos do projeto</div><h2>Ideias para levar ao cotidiano</h2><p>Um mapa breve das distinções, autores e referências que dão contexto às práticas. São lentes de reflexão, não uma escola única nem um diagnóstico.</p></div></div>
+          <div class="grid three">
+            <article class="card concept"><span class="tag">Solitude voluntária</span><h3>Tempo só por escolha</h3><p>Uma experiência escolhida por interesse, repouso ou liberdade interior. Distingue-se do isolamento imposto ou do afastamento governado pelo medo.</p></article>
+            <article class="card concept"><span class="tag">Equanimidade</span><h3>Sentir sem reação automática</h3><p>Notar a experiência e responder com intenção. Não significa ausência de emoção, frieza ou passividade.</p></article>
+            <article class="card concept"><span class="tag">Autonomia afetiva</span><h3>Proximidade sob escolha</h3><p>Decidir contato sem precisar de aprovação ou companhia constante. Afeto, ternura e desejo continuam possíveis.</p></article>
+            <article class="card concept"><span class="tag">Reserva expressiva</span><h3>Discrição sem supressão</h3><p>Escolher como e quando expressar um sentimento, sem ocultar tudo nem impedir conversas sobre limites e segurança.</p></article>
+            <article class="card concept"><span class="tag">Desapego de resultados</span><h3>Agir sem garantia</h3><p>Preparar, agir e aprender sem exigir sucesso. Desapego não é desleixo nem irresponsabilidade.</p></article>
+            <article class="card concept"><span class="tag">Lucidez existencial</span><h3>Escolher projetos pessoais</h3><p>Questionar um sentido universal sem transformar essa pergunta em obrigação de desesperança ou abandono da vida.</p></article>
+          </div>
+
+          <div class="section-head review-head"><div><div class="eyebrow">Para continuar por curiosidade</div><h2>Leituras recomendadas</h2><p>Uma seleção ampla de obras marcantes, sem divisão por áreas e sem guias de autoajuda. A ordem começa perto dos temas do diário e depois abre o repertório.</p></div></div>
+          <div class="library-banner">
+            <div class="library-art"><svg viewBox="0 0 120 90" role="img" aria-labelledby="libraryArtTitle"><title id="libraryArtTitle">Livros abertos sob uma pequena constelação</title><path d="M12 65c14-9 27-9 40 0v15c-13-9-26-9-40 0V65z" fill="#75628e" stroke="#c3a7e8" stroke-width="1.5"/><path d="M52 65c14-9 27-9 40 0v15c-13-9-26-9-40 0V65z" fill="#4e6270" stroke="#a6c5b0" stroke-width="1.5"/><path d="M52 65v16M19 70c8-4 16-4 24 0M60 70c8-4 16-4 24 0" fill="none" stroke="#e5dced" stroke-opacity=".7"/><rect x="19" y="48" width="65" height="8" rx="3" transform="rotate(-6 19 48)" fill="#bc9d75"/><path d="M83 26l2.5 7.5L93 36l-7.5 2.5L83 46l-2.5-7.5L73 36l7.5-2.5L83 26z" fill="#e7c99c"/><circle cx="101" cy="20" r="2" fill="#d8c8ec"/><circle cx="60" cy="17" r="1.5" fill="#d8c8ec"/></svg></div>
+            <p><strong>60 obras essenciais, clássicas e atuais.</strong> A seleção inclui obras pilares de Cioran, Camus, Sartre, Schopenhauer, Kierkegaard, Espinosa (Spinoza) e Marco Aurélio, junto a pesquisa sobre solitude, relações, emoções e cérebro.</p>
+          </div>
+          <div class="book-tools"><label class="sr-only" for="bookSearch">Buscar livro por título ou autor</label><input id="bookSearch" type="search" placeholder="Buscar título ou autor…"><span class="book-count" id="bookCount" role="status" aria-live="polite">60 livros</span></div>
+          <div class="reading-grid" id="readingGrid">
+            <article class="book-item" data-book><span class="book-number">01</span><div><h3><em>Solitude: The Science and Power of Being Alone</em></h3><div class="book-byline">Netta Weinstein, Heather Hansen e Thuy-vy T. Nguyen</div><p>Pesquisa contemporânea para distinguir solitude escolhida, preferência por ficar só e solidão.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">02</span><div><h3><em>Solitude: A Return to the Self</em></h3><div class="book-byline">Anthony Storr</div><p>Ensaio de um psiquiatra sobre solitude, criatividade e vida interior.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">03</span><div><h3><em>Loneliness: Human Nature and the Need for Social Connection</em></h3><div class="book-byline">John T. Cacioppo e William Patrick</div><p>Uma leitura central sobre conexão social, isolamento percebido e necessidades humanas.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">04</span><div><h3><em>A Philosophy of Loneliness</em></h3><div class="book-byline">Lars Svendsen</div><p>Examina a solidão como experiência pessoal, questão social e problema filosófico.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">05</span><div><h3><em>Solitude: A Philosophical Encounter</em></h3><div class="book-byline">Philip Koch</div><p>Uma investigação filosófica sobre o significado e os valores possíveis da solitude.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">06</span><div><h3><em>Meditações</em></h3><div class="book-byline">Marco Aurélio</div><p>Anotações filosóficas privadas de um imperador estoico; um texto antigo, não um manual contemporâneo de autoajuda.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">07</span><div><h3><em>O mito de Sísifo</em></h3><div class="book-byline">Albert Camus</div><p>Ensaio central sobre o absurdo, a revolta e a pergunta filosófica pelo sentido.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">08</span><div><h3><em>Do inconveniente de ter nascido</em></h3><div class="book-byline">E. M. Cioran</div><p>Aforismos filosóficos sobre nascimento, finitude e lucidez; obra literária, não programa de vida.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">09</span><div><h3><em>O mundo como vontade e representação</em></h3><div class="book-byline">Arthur Schopenhauer</div><p>Obra maior que percorre conhecimento, desejo, sofrimento, estética e ética.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">10</span><div><h3><em>Temor e tremor</em></h3><div class="book-byline">Søren Kierkegaard</div><p>Investigação influente sobre fé, escolha e o conflito entre o singular e o universal.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">11</span><div><h3><em>Ética</em></h3><div class="book-byline">Baruch de Espinosa (Spinoza)</div><p>Construção filosófica sistemática sobre natureza, afetos, liberdade e potência de agir.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">12</span><div><h3><em>O homem revoltado</em></h3><div class="book-byline">Albert Camus</div><p>Ensaio sobre revolta, limites morais e a possibilidade de resistir sem justificar tudo.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">13</span><div><h3><em>Breviário de decomposição</em></h3><div class="book-byline">E. M. Cioran</div><p>Primeiro livro de Cioran em francês: ensaios e fragmentos sobre ceticismo, decadência e lucidez.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">14</span><div><h3><em>Aforismos para a sabedoria de vida</em></h3><div class="book-byline">Arthur Schopenhauer</div><p>Ensaios filosóficos de <em>Parerga e Paralipomena</em> sobre expectativas, caráter e limites humanos.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">15</span><div><h3><em>A doença para a morte</em></h3><div class="book-byline">Søren Kierkegaard</div><p>Exame filosófico do desespero e da relação do indivíduo consigo mesmo.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">16</span><div><h3><em>Tratado teológico-político</em></h3><div class="book-byline">Baruch de Espinosa (Spinoza)</div><p>Defesa histórica da liberdade de filosofar e análise das relações entre religião e política.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">17</span><div><h3><em>O existencialismo é um humanismo</em></h3><div class="book-byline">Jean-Paul Sartre</div><p>Conferência breve que apresenta liberdade, responsabilidade e projeto existencial.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">18</span><div><h3><em>O estrangeiro</em></h3><div class="book-byline">Albert Camus</div><p>Romance essencial para acompanhar, pela ficção, temas do absurdo e da relação com convenções sociais.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">19</span><div><h3><em>Silogismos da amargura</em></h3><div class="book-byline">E. M. Cioran</div><p>Aforismos curtos que ampliam a reflexão de Cioran sobre contradição, ceticismo e existência.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">20</span><div><h3><em>A náusea</em></h3><div class="book-byline">Jean-Paul Sartre</div><p>Romance filosófico sobre contingência, experiência e a estranheza de existir.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">21</span><div><h3><em>O ser e o nada</em></h3><div class="book-byline">Jean-Paul Sartre</div><p>Tratado central do existencialismo francês sobre consciência, liberdade, má-fé e relações com os outros.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">22</span><div><h3><em>Alone Together: Why We Expect More from Technology and Less from Each Other</em></h3><div class="book-byline">Sherry Turkle</div><p>Pesquisa e crítica sobre tecnologia, intimidade, comunicação e sensação de isolamento.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">23</span><div><h3><em>The Lonely Crowd</em></h3><div class="book-byline">David Riesman, Nathan Glazer e Reuel Denney</div><p>Clássico sobre como expectativas sociais e aprovação dos outros influenciam a vida individual.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">24</span><div><h3><em>The Presentation of Self in Everyday Life</em></h3><div class="book-byline">Erving Goffman</div><p>Uma lente influente para observar papéis, interação e apresentação de si no cotidiano.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">25</span><div><h3><em>Bowling Alone</em></h3><div class="book-byline">Robert D. Putnam</div><p>Investiga mudanças em vínculos comunitários, participação cívica e capital social.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">26</span><div><h3><em>The Human Condition</em> · <em>A condição humana</em></h3><div class="book-byline">Hannah Arendt</div><p>Obra fundamental sobre ação, pluralidade, trabalho e mundo compartilhado.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">27</span><div><h3><em>The Society of Individuals</em></h3><div class="book-byline">Norbert Elias</div><p>Questiona a separação rígida entre indivíduo e sociedade e observa sua interdependência.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">28</span><div><h3><em>The Sociological Imagination</em> · <em>A imaginação sociológica</em></h3><div class="book-byline">C. Wright Mills</div><p>Ensina a relacionar biografia, escolhas individuais e estruturas sociais.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">29</span><div><h3><em>The Social Construction of Reality</em></h3><div class="book-byline">Peter L. Berger e Thomas Luckmann</div><p>Clássico da sociologia do conhecimento sobre como a realidade cotidiana ganha forma social.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">30</span><div><h3><em>The Managed Heart</em></h3><div class="book-byline">Arlie Russell Hochschild</div><p>Investiga como expectativas sociais moldam emoções e expressão afetiva.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">31</span><div><h3><em>The Second Sex</em> · <em>O segundo sexo</em></h3><div class="book-byline">Simone de Beauvoir</div><p>Obra histórica e influente sobre liberdade, corpo, cultura e construção social da mulher.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">32</span><div><h3><em>The Ethics of Ambiguity</em></h3><div class="book-byline">Simone de Beauvoir</div><p>Uma defesa da liberdade situada e da responsabilidade diante de outras liberdades.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">33</span><div><h3><em>Being and Time</em> · <em>Ser e tempo</em></h3><div class="book-byline">Martin Heidegger</div><p>Uma das obras mais influentes da filosofia do século XX; leitura exigente sobre existência e mundo.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">34</span><div><h3><em>O conceito de angústia</em></h3><div class="book-byline">Søren Kierkegaard</div><p>Explora angústia, possibilidade e liberdade na experiência humana.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">35</span><div><h3><em>I and Thou</em> · <em>Eu e Tu</em></h3><div class="book-byline">Martin Buber</div><p>Reflexão influente sobre presença, encontro e relação entre pessoas.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">36</span><div><h3><em>Escape from Freedom</em> · <em>O medo à liberdade</em></h3><div class="book-byline">Erich Fromm</div><p>Une psicanálise e teoria social para investigar liberdade, conformidade e autoridade.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">37</span><div><h3><em>Discipline and Punish</em> · <em>Vigiar e punir</em></h3><div class="book-byline">Michel Foucault</div><p>Estudo marcante sobre instituições, vigilância e mecanismos de poder.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">38</span><div><h3><em>The Gay Science</em> · <em>A gaia ciência</em></h3><div class="book-byline">Friedrich Nietzsche</div><p>Afirmação, criação de valores e crítica a certezas morais herdadas.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">39</span><div><h3><em>The Denial of Death</em></h3><div class="book-byline">Ernest Becker</div><p>Ensaio premiado sobre mortalidade, cultura e os sentidos que organizam a vida.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">40</span><div><h3><em>Civilization and Its Discontents</em> · <em>O mal-estar na civilização</em></h3><div class="book-byline">Sigmund Freud</div><p>Texto clássico de psicanálise sobre conflito entre desejo, cultura e vida coletiva.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">41</span><div><h3><em>The Interpretation of Dreams</em> · <em>A interpretação dos sonhos</em></h3><div class="book-byline">Sigmund Freud</div><p>Obra histórica que marcou a formação da psicanálise e a investigação da vida psíquica.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">42</span><div><h3><em>The Ego and the Mechanisms of Defence</em></h3><div class="book-byline">Anna Freud</div><p>Texto fundador para a história da psicologia do ego; leia no contexto de sua época.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">43</span><div><h3><em>The Divided Self</em> · <em>O eu dividido</em></h3><div class="book-byline">R. D. Laing</div><p>Obra clínica histórica sobre self e alienação, importante para a psiquiatria do século XX.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">44</span><div><h3><em>Existential Psychotherapy</em></h3><div class="book-byline">Irvin D. Yalom</div><p>Tratado clínico amplo sobre finitude, liberdade, isolamento existencial e sentido.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">45</span><div><h3><em>The Doctor and the Soul</em></h3><div class="book-byline">Viktor Frankl</div><p>Discussão teórica sobre psiquiatria, psicoterapia e busca de sentido; não é manual de autoajuda.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">46</span><div><h3><em>Attachment and Loss, Vol. 1: Attachment</em></h3><div class="book-byline">John Bowlby</div><p>Estudo fundador sobre vínculos de apego e desenvolvimento humano.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">47</span><div><h3><em>A Secure Base</em> · <em>Uma base segura</em></h3><div class="book-byline">John Bowlby</div><p>Ensaios de Bowlby sobre apego, cuidado e relações ao longo da vida.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">48</span><div><h3><em>The Principles of Psychology</em></h3><div class="book-byline">William James</div><p>Clássico monumental que ajudou a estabelecer a psicologia como campo de estudo.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">49</span><div><h3><em>The Varieties of Religious Experience</em></h3><div class="book-byline">William James</div><p>Investiga experiências interiores com atenção psicológica e filosófica.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">50</span><div><h3><em>The Social Animal</em> · <em>O animal social</em></h3><div class="book-byline">Elliot Aronson</div><p>Introdução influente à psicologia social, atitudes, grupos e influência interpessoal.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">51</span><div><h3><em>The Saturated Self</em></h3><div class="book-byline">Kenneth J. Gergen</div><p>Analisa como relações e meios de comunicação desafiam ideias estáveis sobre identidade.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">52</span><div><h3><em>How Emotions Are Made</em></h3><div class="book-byline">Lisa Feldman Barrett</div><p>Uma teoria contemporânea e influente sobre como cérebro, corpo e contexto participam das emoções.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">53</span><div><h3><em>The Emotional Brain</em></h3><div class="book-byline">Joseph LeDoux</div><p>Pesquisa seminal sobre circuitos cerebrais, memória emocional e respostas de ameaça.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">54</span><div><h3><em>Social: Why Our Brains Are Wired to Connect</em></h3><div class="book-byline">Matthew D. Lieberman</div><p>Apresenta achados da neurociência social sobre conexão e cognição.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">55</span><div><h3><em>Behave: The Biology of Humans at Our Best and Worst</em></h3><div class="book-byline">Robert M. Sapolsky</div><p>Uma síntese ampla de biologia, cérebro e contexto social do comportamento.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">56</span><div><h3><em>Self Comes to Mind</em></h3><div class="book-byline">Antonio Damasio</div><p>Explica como cérebro, corpo, emoção e consciência se relacionam na construção do self.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">57</span><div><h3><em>Descartes' Error</em> · <em>O erro de Descartes</em></h3><div class="book-byline">Antonio Damasio</div><p>Obra decisiva sobre emoção, razão e tomada de decisão no cérebro.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">58</span><div><h3><em>Who's in Charge? Free Will and the Science of the Brain</em></h3><div class="book-byline">Michael S. Gazzaniga</div><p>Discute agência, responsabilidade e o que a neurociência permite concluir sobre livre-arbítrio.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">59</span><div><h3><em>The Man Who Mistook His Wife for a Hat</em></h3><div class="book-byline">Oliver Sacks</div><p>Relatos clínicos marcantes que aproximam neurologia, identidade e experiência vivida.</p></div></article>
+            <article class="book-item" data-book><span class="book-number">60</span><div><h3><em>The Brain That Changes Itself</em></h3><div class="book-byline">Norman Doidge</div><p>Divulgação sobre neuroplasticidade escrita por um psiquiatra; apresenta histórias e limites da pesquisa.</p></div></article>
+          </div>
+          <p class="screen-empty mt-10" id="bookEmpty" hidden>Nenhum livro encontrado para essa busca.</p>
+          <div class="recommendation-label mt-20">ARTIGOS · DOI ABRE A PÁGINA DO ESTUDO</div>
+          <div class="grid three">
+            <article class="card recommendation"><span class="card-kicker">Revisão teórica · 2003</span><h3>Solitude: An Exploration of Benefits of Being Alone</h3><p>Long & Averill · panorama conceitual de benefícios e contextos da solitude.</p><a href="https://doi.org/10.1111/1468-5914.00204" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></article>
+            <article class="card recommendation"><span class="card-kicker">Diários · 2022</span><h3>Solitude and affect during emerging adulthood</h3><p>White et al. · diários de sete dias com 411 jovens adultos mostram que motivação e contexto importam ao interpretar tempo sozinho.</p><a href="https://doi.org/10.1177/01650254221133296" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></article>
+            <article class="card recommendation"><span class="card-kicker">Acesso aberto · 2023</span><h3>Motivations for Social Withdrawal</h3><p>Sette et al. · 348 universitários italianos: motivos de retraimento social, saúde mental e bem-estar. A amostra não representa todas as idades.</p><a href="https://doi.org/10.3390/bs13120977" target="_blank" rel="noopener noreferrer">Abrir artigo ↗</a></article>
+          </div>
+          <p class="small muted mt-10">Títulos e disponibilidade podem variar por edição. As recomendações ampliam o mapa do PDF; não são tarefas obrigatórias.</p>
+
+          <details class="idea-more"><summary>Expandir as seis lentes filosóficas</summary>
+          <article class="card">
+            <div class="author-row"><strong>Laozi e Zhuangzi</strong><p><em>Wu wei</em> inspira ação sem imposição artificial; <em>ziran</em> aponta para naturalidade. Adaptar o curso ao contexto não é inércia. A habilidade do cozinheiro Ding ilustra uma ação refinada pela prática.</p></div>
+            <div class="author-row"><strong>Epicteto</strong><p>Distingue a faculdade de escolha dos resultados externos. Pensamentos e reações automáticas podem surgir sem escolha imediata; o treino está em orientar a resposta construída depois.</p></div>
+            <div class="author-row"><strong>Camus</strong><p>O absurdo não ordena desistir. É possível continuar projetos sem exigir um significado cósmico ou uma promessa de satisfação definitiva.</p></div>
+            <div class="author-row"><strong>Sartre</strong><p>A liberdade é situada: decisões têm circunstâncias, história e limites. Ainda assim, é possível escolher projetos sem depender de validação externa.</p></div>
+            <div class="author-row"><strong>Schopenhauer</strong><p>O movimento entre carência, satisfação e tédio e a parábola dos porcos-espinhos sugerem ajustar distâncias relacionais — sem concluir que toda proximidade é nociva.</p></div>
+            <div class="author-row"><strong>Cioran</strong><p>A lucidez e a contradição podem ser pensadas como literatura e filosofia; seus aforismos não são instruções de regulação emocional nem uma meta de desesperança.</p></div>
+            <div class="author-row"><strong>Síntese de trabalho</strong><p>Agir com intenção; desejar sem dependência; relacionar-se sem obrigação; pensar sem ruminar; aceitar acontecimentos sem resignar-se à injustiça.</p></div>
+          </article></details>
+          <div class="section-head review-head"><div><div class="eyebrow">Limites que se ajustam</div><h2>Proximidade sob escolha</h2><p>Você não precisa seguir um padrão mínimo de convivência ou intimidade. O treino é evitar que medo ou validação decidam tudo por você.</p></div></div>
+          <div class="table-scroll"><table><caption class="sr-only">Limites possíveis em situações de convivência</caption><thead><tr><th>Situação</th><th>Limite possível</th><th>Cuide para não transformar em</th></tr></thead><tbody>
+            <tr><td>Mensagens frequentes</td><td>Responder quando houver disponibilidade, com clareza.</td><td>Sumir de propósito para punir alguém.</td></tr>
+            <tr><td>Convites frequentes</td><td>Aceitar ou recusar sem culpa automática.</td><td>Inventar justificativas elaboradas.</td></tr>
+            <tr><td>Compartilhamento íntimo</td><td>Revelar o que fizer sentido para você.</td><td>Reprimir sentimentos para parecer frio.</td></tr>
+            <tr><td>Afeto, toque e sexualidade</td><td>Seguir sua vontade e consentimento, inclusive quando não houver interesse.</td><td>Forçar desejo ou forçar ausência de desejo.</td></tr>
+          </tbody></table></div>
+          <details class="idea-more"><summary>Abrir roteiro de leitura filosófica</summary>
+          <div class="table-scroll"><table><caption class="sr-only">Roteiro de leitura filosófica</caption><thead><tr><th>Camada</th><th>Leitura sugerida</th><th>Pergunta para anotar</th></tr></thead><tbody>
+            <tr><td>Ação sem atrito</td><td><em>Dao De Jing</em>, caps. 2, 8, 37, 48; <em>Zhuangzi</em>, cap. 3.</td><td>Onde tento forçar o que poderia ser ajustado?</td></tr>
+            <tr><td>Escolha e controle</td><td>Epicteto, <em>Encheirídion</em>, §§1, 5, 8.</td><td>Qual escolha é minha e qual resultado não é garantido?</td></tr>
+            <tr><td>Absurdo</td><td>Camus, <em>O mito de Sísifo</em>, sobretudo a parte final.</td><td>Por que continuar um projeto sem sentido universal?</td></tr>
+            <tr><td>Liberdade situada</td><td>Sartre, <em>O existencialismo é um humanismo</em>.</td><td>O que escolho sem precisar de aprovação?</td></tr>
+            <tr><td>Desejo e distância</td><td>Schopenhauer, <em>O mundo como vontade e representação</em>, §57; <em>Parerga</em>, §396.</td><td>Que expectativas sobre desejo e proximidade me fazem sofrer?</td></tr>
+            <tr><td>Paradoxo</td><td>Cioran, <em>Do inconveniente de ter nascido</em>.</td><td>Posso pensar radicalmente sem transformar a reflexão em regra de vida?</td></tr>
+          </tbody></table></div></details>
+
+          <div class="section-head review-head"><div><div class="eyebrow">O que a evidência permite dizer</div><h2>Suporte e limites</h2><p>O pacote completo de 28 dias não foi avaliado como intervenção. As práticas são adaptações pessoais com níveis diferentes de suporte.</p></div></div>
+          <div class="grid two">
+            <article class="card"><div class="card-kicker">Solitude e autonomia</div><p class="small muted">Estudos experimentais e diários sugerem que a solitude escolhida pode favorecer experiências tranquilas. Não existe proporção ideal universal entre tempo só e convívio; mais tempo sozinho também pode coincidir com solidão. Preferir ficar só não garante apreciar a experiência.</p></article>
+            <article class="card"><div class="card-kicker">Aceitação e regulação</div><p class="small muted">Há suporte para aceitação, reavaliação, desfusão e flexibilidade psicológica, com heterogeneidade e limites. Aceitação não apaga emoções nem impede limites. Supressão frequente e ruminação não são metas.</p></article>
+            <article class="card"><div class="card-kicker">Raiva e pensamento repetitivo</div><p class="small muted">Metanálises relacionam ruminação e evitação a maior raiva e indicam benefícios de abordagens cognitivo-comportamentais para pensamento negativo repetitivo. Nem todo estudo demonstra causalidade ou efeito igual para cada pessoa.</p></article>
+            <article class="card"><div class="card-kicker">Adaptações pedagógicas</div><p class="small muted">Pausas de 10–15 minutos, janelas de preocupação e os 90 segundos iniciais são escolhas didáticas do projeto, não tempos universais nem garantias de efeito.</p></article>
+          </div>
+          <details class="references">
+            <summary>Ver referências comentadas do projeto</summary>
+            <div class="source-list">
+              <div class="source-item"><strong>[E1] Nguyen, Ryan & Deci · 2018</strong><span>Solitude as an Approach to Affective Self-Regulation. DOI: <a href="https://doi.org/10.1177/0146167217733073" target="_blank" rel="noopener noreferrer">10.1177/0146167217733073</a></span></div>
+              <div class="source-item"><strong>[E2] Weinstein et al. · 2023</strong><span>Balance between solitude and socializing. DOI: <a href="https://doi.org/10.1038/s41598-023-44507-7" target="_blank" rel="noopener noreferrer">10.1038/s41598-023-44507-7</a></span></div>
+              <div class="source-item"><strong>[E3] Nguyen, Weinstein & Ryan · 2022</strong><span>Who enjoys solitude? DOI: <a href="https://doi.org/10.1371/journal.pone.0267185" target="_blank" rel="noopener noreferrer">10.1371/journal.pone.0267185</a></span></div>
+              <div class="source-item"><strong>[E4] Adams et al. · 2025</strong><span>Crafting solitude. DOI: <a href="https://doi.org/10.1080/00224545.2025.2563539" target="_blank" rel="noopener noreferrer">10.1080/00224545.2025.2563539</a></span></div>
+              <div class="source-item"><strong>[E5] Rodriguez et al. · 2023 (edição de 2025)</strong><span>Solitude can be good—If you see it as such. DOI: <a href="https://doi.org/10.1111/jopy.12887" target="_blank" rel="noopener noreferrer">10.1111/jopy.12887</a></span></div>
+              <div class="source-item"><strong>[E6] Gross & John · 2003</strong><span>Individual differences in emotion regulation. DOI: <a href="https://doi.org/10.1037/0022-3514.85.2.348" target="_blank" rel="noopener noreferrer">10.1037/0022-3514.85.2.348</a></span></div>
+              <div class="source-item"><strong>[E7] Ford et al. · 2018</strong><span>The psychological health benefits of accepting negative emotions and thoughts. DOI: <a href="https://doi.org/10.1037/pspp0000157" target="_blank" rel="noopener noreferrer">10.1037/pspp0000157</a></span></div>
+              <div class="source-item"><strong>[E8] Macri & Rogge · 2024</strong><span>Psychological flexibility in acceptance and commitment therapy. DOI: <a href="https://doi.org/10.1016/j.cpr.2024.102432" target="_blank" rel="noopener noreferrer">10.1016/j.cpr.2024.102432</a></span></div>
+              <div class="source-item"><strong>[E9] Raugh et al. · 2025</strong><span>Mindfulness-based emotion regulation strategies. DOI: <a href="https://doi.org/10.1007/s42761-024-00281-x" target="_blank" rel="noopener noreferrer">10.1007/s42761-024-00281-x</a></span></div>
+              <div class="source-item"><strong>[E10] Pop et al. · 2025</strong><span>Anger and emotion regulation strategies: a meta-analysis. DOI: <a href="https://doi.org/10.1038/s41598-025-91646-0" target="_blank" rel="noopener noreferrer">10.1038/s41598-025-91646-0</a></span></div>
+              <div class="source-item"><strong>[E11] Stenzel et al. · 2025; correção · 2026</strong><span>CBT and repetitive negative thinking. DOI: <a href="https://doi.org/10.1017/S0033291725000017" target="_blank" rel="noopener noreferrer">10.1017/S0033291725000017</a>; correção: <a href="https://doi.org/10.1017/S0033291726103304" target="_blank" rel="noopener noreferrer">10.1017/S0033291726103304</a></span></div>
+              <div class="source-item"><strong>[E12] Krzikalla et al. · 2024</strong><span>Worry postponement: randomized waitlist-controlled trial. DOI: <a href="https://doi.org/10.32872/cpe.12741" target="_blank" rel="noopener noreferrer">10.32872/cpe.12741</a></span></div>
+              <div class="source-item"><strong>[E13] Ryan & Deci · 2000</strong><span>Self-determination theory. DOI: <a href="https://doi.org/10.1037/0003-066X.55.1.68" target="_blank" rel="noopener noreferrer">10.1037/0003-066X.55.1.68</a></span></div>
+              <div class="source-item"><strong>[E14] Webb, Miles & Sheeran · 2012</strong><span>Dealing with feeling: meta-analysis of emotion regulation. DOI: <a href="https://doi.org/10.1037/a0027600" target="_blank" rel="noopener noreferrer">10.1037/a0027600</a></span></div>
+              <div class="source-item"><strong>[F1–F8] Fontes filosóficas</strong><span>Laozi, Zhuangzi, Epicteto, Camus, Sartre, Schopenhauer e Cioran; capítulos e traduções variam.</span></div>
+              <div class="source-item"><strong>[F9–F10] Stanford Encyclopedia of Philosophy</strong><span>Entradas sobre Daoísmo, Laozi, Albert Camus e Existencialismo, usadas como apoio contextual.</span></div>
+              <div class="source-item"><strong>[C1] Manual MSD</strong><span>Referência descritiva de diagnóstico, não como meta de autoformação.</span></div>
+            </div>
+          </details>
+          <div class="subtle-rule"></div>
+          <div class="manifesto">
+            <div class="eyebrow mb-13">Declaração de princípios · versão ajustável</div>
+            <p>Não preciso de um sentido universal para viver de maneira intensa e consciente.</p>
+            <p>Posso apreciar a solitude e também escolher companhia, sem transformar nenhuma das duas em dever.</p>
+            <p>Posso sentir emoções e ainda decidir como expressá-las ou agir a partir delas.</p>
+            <p>Posso considerar críticas sem depender da aprovação de quem as faz.</p>
+            <p>Posso desejar conquistas sem acreditar que uma conquista encerrará todas as minhas inquietações.</p>
+            <p>Posso continuar empurrando a pedra, com lucidez, sem lutar contra cada pedra encontrada no caminho.</p>
+          </div>
+          <p class="small muted mt-15">Este espaço organiza práticas de reflexão pessoal. Não é protocolo clínico validado, promessa de ausência de ansiedade nem método para alterar traços estruturais de personalidade.</p>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Navegação móvel">
+    <button class="nav-button" data-view="home" aria-current="page"><span class="nav-icon"><svg aria-hidden="true"><use href="#icon-today"/></svg></span>Hoje</button>
+    <button class="nav-button" data-view="journey"><span class="nav-icon"><svg aria-hidden="true"><use href="#icon-journey"/></svg></span>Jornada</button>
+    <button class="nav-button" data-view="practices"><span class="nav-icon"><svg aria-hidden="true"><use href="#icon-practice"/></svg></span>Práticas</button>
+    <button class="nav-button" data-view="reviews"><span class="nav-icon"><svg aria-hidden="true"><use href="#icon-review"/></svg></span>Revisões</button>
+    <button class="nav-button" data-view="ideas"><span class="nav-icon"><svg aria-hidden="true"><use href="#icon-ideas"/></svg></span>Ideias</button>
+  </nav>
+  <input class="file-input" id="importFile" type="file" accept="application/json,.json">
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="aiDialog" aria-labelledby="aiTitle">
+    <div class="dialog-body">
+      <div class="eyebrow">Sem envio automático</div>
+      <h2 id="aiTitle">Analisar este dia com IA</h2>
+      <p class="small muted">O prompt combina uma pergunta de reflexão com a meta e o diário deste dia. Copie, abra a IA que preferir e cole o texto para receber uma análise. O site nunca envia o registro por conta própria. Evite incluir dados que identifiquem outras pessoas. Se o dia está pesado demais, vale falar com alguém: <a href="tel:188">CVV 188</a> (24 h).</p>
+      <textarea id="aiPrompt" aria-label="Texto preparado para copiar para uma IA"></textarea>
+      <p class="small muted" id="aiCopyState" aria-live="polite">Depois de copiar, abra a IA que preferir e cole o prompt. O texto só sai do navegador quando você o cola em outro serviço.</p>
+      <div class="dialog-actions"><button class="quiet-button" id="closeAI" type="button">Voltar ao diário</button><button class="primary-button" id="copyAI" type="button">Copiar prompt</button></div>
+      <div class="link-row mt-13"><a class="ai-link" href="https://claude.ai/new" target="_blank" rel="noopener noreferrer">Abrir Claude ↗</a><a class="ai-link" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir ChatGPT ↗</a><a class="ai-link" href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer">Abrir Gemini ↗</a></div>
+    </div>
+  </dialog>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
