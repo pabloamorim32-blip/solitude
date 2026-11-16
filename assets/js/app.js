@@ -681,7 +681,7 @@
       'Registro do dia:'
     ].concat(lines).join('\n');
     $('aiPrompt').value = prompt;
-    $('aiCopyState').textContent = 'Depois de copiar, abra a IA que preferir e cole o prompt. O texto só sai do navegador quando você o cola em outro serviço.';
+    $('aiCopyState').textContent = 'O texto permanece no navegador até você colá-lo em outro serviço ou selecionar “Analisar aqui” após consentir.';
     $('aiConsent').checked = false;
     $('runAI').disabled = true;
     $('aiResult').hidden = true;
