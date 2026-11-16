@@ -444,6 +444,12 @@
       <p class="small muted">O prompt combina uma pergunta de reflexão com a meta e o diário deste dia. Copie, abra a IA que preferir e cole o texto para receber uma análise. O site nunca envia o registro por conta própria. Evite incluir dados que identifiquem outras pessoas. Se o dia está pesado demais, vale falar com alguém: <a href="tel:188">CVV 188</a> (24 h).</p>
       <textarea id="aiPrompt" aria-label="Texto preparado para copiar para uma IA"></textarea>
       <p class="small muted" id="aiCopyState" aria-live="polite">Depois de copiar, abra a IA que preferir e cole o prompt. O texto só sai do navegador quando você o cola em outro serviço.</p>
+      <div class="ai-direct">
+        <label class="check-row"><input type="checkbox" id="aiConsent"> <span>Entendo que, ao usar “Analisar aqui”, este texto será enviado ao servidor do site e a um serviço de IA.</span></label>
+        <div class="field" id="aiCodeField" hidden><label for="aiCode">Código de acesso</label><input id="aiCode" type="password" autocomplete="off"></div>
+        <button class="secondary-button" id="runAI" type="button" disabled>Analisar aqui</button>
+        <div class="ai-result" id="aiResult" aria-live="polite" hidden></div>
+      </div>
       <div class="dialog-actions"><button class="quiet-button" id="closeAI" type="button">Voltar ao diário</button><button class="primary-button" id="copyAI" type="button">Copiar prompt</button></div>
       <div class="link-row mt-13"><a class="ai-link" href="https://claude.ai/new" target="_blank" rel="noopener noreferrer">Abrir Claude ↗</a><a class="ai-link" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir ChatGPT ↗</a><a class="ai-link" href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer">Abrir Gemini ↗</a></div>
     </div>

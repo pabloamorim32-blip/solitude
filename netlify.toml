@@ -1,0 +1,6 @@
+# Configuração do Netlify. Fica na raiz do repositório, ao lado de index.html.
+[build]
+  publish = "."            # pasta onde está o index.html (se estiver numa subpasta, troque, ex.: "entre-margens")
+
+[functions]
+  directory = "netlify/functions"

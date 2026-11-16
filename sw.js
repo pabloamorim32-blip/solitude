@@ -1,7 +1,7 @@
 /* Service worker do "Entre margens": faz o site funcionar offline depois da primeira visita.
    Estratégia: rede primeiro (para atualizações chegarem logo) e cache como reserva.
    Ao publicar uma versão nova, aumente CACHE_VERSION. */
-const CACHE_VERSION = 'entre-margens-v2';
+const CACHE_VERSION = 'entre-margens-v3';
 const CORE = [
   './',
   'index.html',

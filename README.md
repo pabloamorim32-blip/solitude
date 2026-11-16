@@ -2,42 +2,56 @@
 
 Diário web para praticar **solitude escolhida, equanimidade e autonomia existencial**: jornada de 28 dias, fichas diárias, cartas de prática, revisões semanais e leituras.
 
-- 100% estático (HTML + CSS + JS), sem servidor, sem cadastro, sem rastreamento.
-- Os registros ficam **apenas no navegador** (`localStorage`). Nada é enviado a lugar nenhum.
-- Funciona offline e pode ser instalado como app (PWA).
-- Análise com IA: o site só **prepara um texto para você copiar**; você decide se cola em Claude, ChatGPT, Gemini etc.
+## Como funciona
+
+- A interface é estática (HTML, CSS e JavaScript), sem cadastro ou rastreamento.
+- Os registros ficam no navegador (`localStorage`).
+- **Copiar prompt** prepara o texto para você levar a uma IA externa. Nada é enviado por essa opção.
+- **Analisar aqui** envia o prompt somente depois que você marcar o consentimento. O texto passa pela função do Netlify e pela API da Anthropic; não envie informações que identifiquem outras pessoas.
 
 ## Estrutura
 
 ```
-index.html                 página única
-manifest.webmanifest       instalação como app
-sw.js                      funcionamento offline (suba CACHE_VERSION a cada versão nova)
-assets/css/style.css       estilos
-assets/js/data.js          conteúdo: dias, metas, práticas (edite textos aqui)
-assets/js/app.js           lógica
-assets/icons/              ícones
-.nojekyll                  evita processamento Jekyll no GitHub Pages
+index.html                         página única
+manifest.webmanifest               instalação como app
+sw.js                              funcionamento offline (atualize CACHE_VERSION a cada versão)
+assets/css/style.css               estilos
+assets/js/data.js                  dias, metas e práticas
+assets/js/app.js                   lógica
+assets/icons/                      ícones do app
+netlify.toml                       publicação e configuração de Functions
+netlify/functions/analisar.mjs     análise de IA no servidor
+.nojekyll                          evita processamento Jekyll no GitHub Pages
 ```
 
 ## Publicar no GitHub Pages
 
-1. Copie **todo o conteúdo** desta pasta (incluindo `.nojekyll`) para a raiz do repositório.
-2. `git add . && git commit -m "Entre margens" && git push`
-3. No GitHub: **Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`**.
-4. O site abre em `https://SEU-USUARIO.github.io/NOME-DO-REPO/`.
+1. Copie todo o conteúdo da raiz, incluindo o arquivo `.nojekyll`.
+2. Em **Settings → Pages → Build and deployment**, escolha **Deploy from a branch → main / (root)**.
+3. O site ficará em `https://SEU-USUARIO.github.io/NOME-DO-REPO/`.
 
-Para testar localmente: `python3 -m http.server` e abra `http://localhost:8000`.
+O modo **Analisar aqui** requer Netlify. No GitHub Pages, use **Copiar prompt** para abrir uma IA à sua escolha.
 
-## Migrar dados do arquivo antigo
+## Publicar no Netlify
 
-Os dados são por endereço. No HTML antigo use **Baixar meus dados**; no site novo use **Importar cópia**. O formato é compatível.
+O arquivo `netlify.toml` define a publicação da raiz (`.`) e a pasta de funções (`netlify/functions`). Conecte o repositório ao Netlify, deixe o comando de build vazio e publique.
+
+Em **Site configuration → Environment variables**, configure:
+
+- `ANTHROPIC_API_KEY`: obrigatória; crie a chave na Anthropic e salve como variável secreta do Netlify. Nunca coloque a chave no HTML, JavaScript ou GitHub.
+- `ACCESS_CODE`: opcional, mas recomendada se o site for público. Salve como segredo; quem usar a análise integrada precisará informar esse código.
+- `AI_MODEL`: opcional. O padrão da função é `claude-sonnet-5-5`.
+
+Depois de salvar ou alterar as variáveis, publique uma nova implantação para que a função receba os valores.
 
 ## Privacidade e segurança
 
-- Política de conteúdo (CSP) restritiva: sem scripts, fontes ou imagens externas.
-- Importação valida e limita os dados (datas, escalas 0–10, minutos 0–1440, tamanho do arquivo).
-- Se o repositório for público, o código é público, mas os registros de cada pessoa não: ficam só no navegador dela. Para o site não aparecer em buscadores, adicione `<meta name="robots" content="noindex">` no `<head>`.
+- Sem análise integrada, os registros permanecem no navegador e não são transmitidos pelo site.
+- Com **Analisar aqui**, somente o prompt preparado é enviado ao servidor do Netlify e à Anthropic, após consentimento explícito.
+- A função não grava o conteúdo do diário em logs da aplicação. A Anthropic recebe o prompt para gerar a resposta.
+- Sem `ACCESS_CODE`, qualquer pessoa que acessar o site poderá chamar a função e consumir a cota da chave. O código compartilhado restringe o acesso, mas não substitui autenticação individual ou limite de uso.
+- A importação valida datas, escalas de 0 a 10, minutos de 0 a 1440 e o tamanho do arquivo.
+- Para ocultar o site de buscadores, adicione `<meta name="robots" content="noindex">` ao `<head>`.
 
 ## Aviso
 
