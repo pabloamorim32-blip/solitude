@@ -34,7 +34,7 @@ O modo **Analisar aqui** requer Netlify. No GitHub Pages, use **Copiar prompt** 
 
 ## Publicar no Netlify
 
-O arquivo `netlify.toml` define a publicação da raiz (`.`) e a pasta de funções (`netlify/functions`). Conecte o repositório ao Netlify, deixe o comando de build vazio e publique.
+Conecte o repositório ao Netlify e publique. O `netlify.toml` copia os arquivos do site para `public/`, publica essa pasta e implanta a função de análise de `netlify/functions`. O diretório de publicação deve ser uma pasta, não `index.html`.
 
 Em **Site configuration → Environment variables**, configure:
 
